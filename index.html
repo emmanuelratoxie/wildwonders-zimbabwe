@@ -233,8 +233,8 @@
       <section id="about" class="about-section">
         <div class="container about-inner">
           <div class="about-profile">
-            <!-- Profile avatar will be generated from the repo hero image on the client using canvas. -->
-            <img id="profile-avatar" src="/IMG-20261017-WA3449.jpg" alt="Portrait of Emmanuel Ratoxie" width="120" height="120" />
+            <!-- Profile avatar fallback now points to a static SVG in the repo for crawlers/email clients -->
+            <img id="profile-avatar" src="/images/avatar.svg" alt="Portrait of Emmanuel Ratoxie" width="120" height="120" />
             <div class="profile-copy">
               <p class="eyebrow">About the curator</p>
               <h3>Emmanuel Ratoxie</h3>
@@ -468,8 +468,8 @@
           avatar.height = 120;
         };
         img.onerror = function(){
-          // keep the repo image as fallback
-          avatar.src = src;
+          // keep the repo svg fallback as final fallback
+          avatar.src = '/images/avatar.svg';
         };
         img.src = src;
       })();
