@@ -32,6 +32,7 @@
         <ul>
           <li><a href="#story">Story</a></li>
           <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -113,6 +114,77 @@
       </div>
     </section>
 
+    <!-- Gallery with lazy-loading thumbnails and lightbox support -->
+    <section id="gallery" class="container gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h3>Frames from the wild</h3>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Each figure uses a small/medium Unsplash image for thumbnails and a larger image for lightbox -->
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Elephant drinking at a river" data-full="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Elephant at the river</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Safari landscape with acacia trees" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Acacia silhouette</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Lion resting in the grass" data-full="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Lion in the grass</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Baobab tree silhouette" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Baobab silhouette</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Birds on a branch" data-full="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Birds at dusk</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=60"
+               srcset="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=60 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               loading="lazy"
+               alt="Hippo emerging from the water" data-full="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=2000&q=80"
+               tabindex="0">
+          <figcaption>Hippo in the water</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="experience" class="experience-section">
       <div class="container experience-inner">
         <div class="experience-copy">
@@ -150,6 +222,18 @@
     </section>
   </main>
 
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lb-close" aria-label="Close (Esc)">×</button>
+    <button class="lb-prev" aria-label="Previous image">‹</button>
+    <div class="lb-stage">
+      <img id="lb-image" src="" alt="" />
+      <div id="lb-spinner" class="lb-spinner" aria-hidden="true"></div>
+      <p id="lb-caption" class="lb-caption"></p>
+    </div>
+    <button class="lb-next" aria-label="Next image">›</button>
+  </div>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Wild Wonders Zimbabwe</p>
@@ -160,6 +244,7 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Mobile nav toggle
     const toggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('primary-nav');
     toggle.addEventListener('click', () => {
@@ -167,6 +252,97 @@
       toggle.setAttribute('aria-expanded', String(!expanded));
       nav.classList.toggle('open');
     });
+
+    // Lightbox functionality
+    (function(){
+      const gallery = Array.from(document.querySelectorAll('.gallery-item img'));
+      const lightbox = document.getElementById('lightbox');
+      const lbImage = document.getElementById('lb-image');
+      const lbCaption = document.getElementById('lb-caption');
+      const lbSpinner = document.getElementById('lb-spinner');
+      const btnClose = lightbox.querySelector('.lb-close');
+      const btnPrev = lightbox.querySelector('.lb-prev');
+      const btnNext = lightbox.querySelector('.lb-next');
+      let current = 0;
+
+      function open(index){
+        current = index;
+        show(current);
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        btnClose.focus();
+      }
+
+      function close(){
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden','true');
+        lbImage.src = '';
+        document.body.style.overflow = '';
+      }
+
+      function show(index){
+        const img = gallery[index];
+        const full = img.dataset.full || img.src;
+        const alt = img.alt || '';
+        const caption = img.nextElementSibling ? img.nextElementSibling.textContent : '';
+        lbCaption.textContent = caption || alt;
+        lbImage.src = '';
+        lbSpinner.style.display = 'block';
+
+        const pre = new Image();
+        pre.onload = function(){
+          lbImage.src = pre.src;
+          lbImage.alt = alt;
+          lbSpinner.style.display = 'none';
+        };
+        pre.onerror = function(){
+          lbSpinner.style.display = 'none';
+          lbCaption.textContent = 'Image failed to load.';
+        };
+        pre.src = full;
+      }
+
+      function prev(){ current = (current - 1 + gallery.length) % gallery.length; show(current); }
+      function next(){ current = (current + 1) % gallery.length; show(current); }
+
+      gallery.forEach((img, i) => {
+        img.addEventListener('click', () => open(i));
+        img.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+      });
+
+      btnClose.addEventListener('click', close);
+      btnPrev.addEventListener('click', prev);
+      btnNext.addEventListener('click', next);
+
+      // keyboard navigation
+      document.addEventListener('keydown', (e)=>{
+        if(!lightbox.classList.contains('open')) return;
+        if(e.key === 'Escape') close();
+        if(e.key === 'ArrowLeft') prev();
+        if(e.key === 'ArrowRight') next();
+      });
+
+      // click outside to close
+      lightbox.addEventListener('click', (e)=>{
+        if(e.target === lightbox) close();
+      });
+
+      // lazy load enhancement: use IntersectionObserver to set src from data-src if present
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries, observer)=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){
+              const img = entry.target;
+              // if data-src exists (placeholder pattern), swap in. We used direct src, so this is a noop for now.
+              if(img.dataset.src){ img.src = img.dataset.src; }
+              observer.unobserve(img);
+            }
+          });
+        }, {rootMargin: '200px 0px'});
+        document.querySelectorAll('.gallery-item img').forEach(img=> io.observe(img));
+      }
+    })();
   </script>
 </body>
 </html>
