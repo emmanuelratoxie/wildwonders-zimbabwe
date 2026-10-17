@@ -19,7 +19,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://emmanuelratoxie.github.io/wildwonders-zimbabwe/" />
-    <meta property="og:image" content="https://emmanuelratoxie.github.io/wildwonders-zimbabwe/IMG-20261017-WA3449.jpg" />
+    <meta property="og:image" content="https://emmanuelratoxie.github.io/wildwonders-zimbabwe/images/og.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wild Wonders Zimbabwe" />
     <meta
@@ -76,7 +76,7 @@
     <main id="main">
       <section class="hero" aria-label="Wild Wonders hero section">
         <div class="hero-image-wrap">
-          <img src="/IMG-20261017-WA3449.jpg" alt="Zimbabwe wilderness at sunset with waterfall and wildlife" />
+          <img src="/images/hero.svg" alt="Zimbabwe wilderness at sunset with waterfall and wildlife" />
         </div>
         <div class="container hero-content-wrap">
           <div class="hero-content">
@@ -233,7 +233,6 @@
       <section id="about" class="about-section">
         <div class="container about-inner">
           <div class="about-profile">
-            <!-- Profile avatar fallback now points to a static SVG in the repo for crawlers/email clients -->
             <img id="profile-avatar" src="/images/avatar.svg" alt="Portrait of Emmanuel Ratoxie" width="120" height="120" />
             <div class="profile-copy">
               <p class="eyebrow">About the curator</p>
@@ -415,63 +414,6 @@
         lightbox.addEventListener('click', (event) => {
           if (event.target === lightbox) closeLightbox();
         });
-      })();
-
-      // Avatar generation: create circular cropped avatars client-side from the repo hero image
-      (function(){
-        const avatar = document.getElementById('profile-avatar');
-        const src = '/IMG-20261017-WA3449.jpg';
-
-        function createCroppedDataURL(img, size, mime='image/webp'){
-          const canvas = document.createElement('canvas');
-          canvas.width = size;
-          canvas.height = size;
-          const ctx = canvas.getContext('2d');
-
-          // compute centered square crop from the source image
-          const sw = img.naturalWidth;
-          const sh = img.naturalHeight;
-          const s = Math.min(sw, sh);
-          const sx = Math.floor((sw - s) / 2);
-          const sy = Math.floor((sh - s) / 2);
-
-          // draw circular mask
-          ctx.save();
-          ctx.beginPath();
-          ctx.arc(size/2, size/2, size/2, 0, Math.PI*2);
-          ctx.closePath();
-          ctx.clip();
-
-          ctx.drawImage(img, sx, sy, s, s, 0, 0, size, size);
-          ctx.restore();
-
-          try{
-            return canvas.toDataURL(mime, 0.9);
-          }catch(e){
-            // fallback to jpeg
-            return canvas.toDataURL('image/jpeg', 0.9);
-          }
-        }
-
-        const img = new Image();
-        img.crossOrigin = 'anonymous';
-        img.onload = function(){
-          // generate large and small avatars
-          const data400 = createCroppedDataURL(img, 400);
-          const data200 = createCroppedDataURL(img, 200);
-
-          // use srcset so browsers can pick appropriate size
-          avatar.src = data400;
-          avatar.srcset = data200 + ' 200w, ' + data400 + ' 400w';
-          avatar.sizes = '(max-width:700px) 200px, 120px';
-          avatar.width = 120;
-          avatar.height = 120;
-        };
-        img.onerror = function(){
-          // keep the repo svg fallback as final fallback
-          avatar.src = '/images/avatar.svg';
-        };
-        img.src = src;
       })();
     </script>
   </body>

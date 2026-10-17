@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Wild Wonders Zimbabwe open graph image</title>
+  <desc id="desc">Cinematic waterfall and wildlife scene in Zimbabwe used as a social preview.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b1d10"/>
+      <stop offset="30%" stop-color="#99611a"/>
+      <stop offset="65%" stop-color="#d7a15d"/>
+      <stop offset="100%" stop-color="#f0d8a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g>
+    <image href="/IMG-20261017-WA3449.jpg" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+</svg>

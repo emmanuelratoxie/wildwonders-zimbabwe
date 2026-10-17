@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Wild Wonders Zimbabwe hero</title>
+  <desc id="desc">Cinematic sunset image of waterfalls and wildlife in Zimbabwe.</desc>
+  <defs>
+    <linearGradient id="topFade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3d2a16"/>
+      <stop offset="35%" stop-color="#a56f2f"/>
+      <stop offset="70%" stop-color="#d9b26c"/>
+      <stop offset="100%" stop-color="#f3dcc0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="18%" r="28%">
+      <stop offset="0%" stop-color="#fff2c5" stop-opacity="1"/>
+      <stop offset="18%" stop-color="#ffd780" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#d79145" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d79145" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#topFade)"/>
+  <circle cx="800" cy="170" r="210" fill="url(#sunGlow)"/>
+  <rect y="450" width="1600" height="450" fill="#0f261d" opacity="0.18"/>
+  <g opacity="0.95">
+    <image href="/IMG-20261017-WA3449.jpg" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+</svg>
