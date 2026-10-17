@@ -1,0 +1,41 @@
+/* Basic styles for Wild Wonders Zimbabwe landing page */
+:root{
+  --bg:#0b0f12;
+  --card:#0f1720;
+  --accent:#f59e0b;
+  --muted:#9ca3af;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef3;background:linear-gradient(180deg,#071018 0%,#0b1220 100%)}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.site-title{font-size:1.25rem;margin:0;color:var(--accent)}
+#nav-toggle{background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;padding:.5rem .75rem;border-radius:6px}
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.primary-nav a{color:inherit;text-decoration:none;padding:.25rem .5rem}
+.primary-nav.open{display:block}
+
+.hero{position:relative;display:flex;align-items:center;color:#fff;margin-bottom:2rem}
+.hero img{width:100%;height:320px;object-fit:cover;border-radius:8px}
+.hero-content{position:absolute;left:1rem;bottom:1rem;background:linear-gradient(180deg,rgba(0,0,0,0.0),rgba(0,0,0,0.45));padding:1rem;border-radius:6px;max-width:90%}
+.hero h2{margin:.25rem 0;font-size:1.6rem}
+.cta{display:inline-block;background:var(--accent);color:#071018;padding:.5rem .75rem;border-radius:6px;text-decoration:none}
+.secondary-cta{display:inline-block;border:1px solid rgba(255,255,255,0.08);color:inherit;padding:.4rem .6rem;border-radius:6px;text-decoration:none}
+
+.about, .gallery, .visit, .contact{background:rgba(255,255,255,0.03);padding:1rem;border-radius:8px;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.grid img{width:100%;height:200px;object-fit:cover;border-radius:6px}
+.site-footer{padding:1.25rem 0;text-align:center;color:var(--muted)}
+
+@media(min-width:720px){
+  .hero img{height:420px}
+  .hero-content{left:2rem;bottom:2rem}
+}
+
+@media(max-width:720px){
+  .primary-nav ul{flex-direction:column;background:transparent;position:absolute;right:1rem;top:64px;padding:0.5rem;border-radius:6px;display:none}
+  .primary-nav.open ul{display:flex}
+}
